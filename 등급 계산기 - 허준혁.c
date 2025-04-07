@@ -8,7 +8,7 @@ void main()
    scanf("%f", &num);
    
    if ((int)num <= 100 && (int)num > 0) {
-       switch((int)num / 10) {
+       switch ((int)num / 10) {
             case 10:
             case 9:
                 printf("A등급\n");
