@@ -7,8 +7,8 @@ void main()
     printf("온도를 입력해주세요.");
     scanf("%f", &num);
     
-    if(num <= 30) {
-        switch((int)num) {
+    if (num <= 30) {
+        switch ((int)num) {
             case 30:
             case 29:
             case 28:
