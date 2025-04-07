@@ -30,7 +30,7 @@ void main()
        printf("잘못된 수 입력\n");
    }
    
-   switch((int)num / 10) {
+   switch ((int)num / 10) {
         case 9:
             printf("10%% 추가 보너스\n");
             num = num + (num * 0.1);
