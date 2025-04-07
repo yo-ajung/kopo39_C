@@ -10,7 +10,7 @@ void main()
     int b = (num % 100) / 10;
     int c = (num % 10) / 1;
 
-    if(num < 1000 && c != 0) {
+    if (num < 1000 && c != 0) {
         printf("연산결과: (%d + %d) * %d - (%d - %d) / %d = %d",
                     a, b, c, a, b, c, (a + b) * c - (a - b) / c);
     } else {
