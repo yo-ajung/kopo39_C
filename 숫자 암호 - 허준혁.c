@@ -6,7 +6,7 @@ void main()
     printf("숫자를 입력하시오:");
     scanf("%d", &num);
     
-    switch(num) {
+    switch (num) {
         case 0:
             printf("A");
             break;
