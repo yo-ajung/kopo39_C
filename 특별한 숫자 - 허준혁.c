@@ -11,12 +11,12 @@ void main()
     int c = (num % 10) / 1; // 1의 자리 값
     int result = a + b + c;
 
-    if(num < 1000 && num > 0) {
-        if(num % 3 == 0 && num % 2 != 0) {
+    if (num < 1000 && num > 0) {
+        if (num % 3 == 0 && num % 2 != 0) {
             printf("특별한 숫자입니다!\n");
-        } else if(result % 7 == 0) {
+        } else if (result % 7 == 0) {
             printf("특별한 숫자입니다!\n");
-        } else if(a > c) {
+        } else if (a > c) {
             printf("특별한 숫자입니다!\n");
         } else {
             printf("특별한 숫자가 아닙니다!\n");
