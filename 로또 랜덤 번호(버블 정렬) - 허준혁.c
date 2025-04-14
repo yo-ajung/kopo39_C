@@ -10,18 +10,18 @@ int n;
  
 void bubble_sort(int num[], int n)
 {
-   int i, j, least, temp;
+   int i, j, temp;
    
    for (i = n - 1; i > 0; i--) {
       for (j = 0; j < i ; j++) {
-            if(num[j] > num[j + 1]) {
+            if (num[j] > num[j + 1]) {
                 SWAP(num[j], num[j + 1], temp);
             } 
-      }
-   }
+        }
+    }
 }
 
-int main(void)
+void main()
 {
    int i, j;
    n = MAX_SIZE;
@@ -40,7 +40,4 @@ int main(void)
    for (i = 0; i < n; i++) {
         printf("%d ", num[i]);   
    }
-   return 0;
 }
-
-로또(버블정렬)
