@@ -15,5 +15,3 @@ void main()
        printf("%d ", i);
    }
 }
-
-1부터 n까지 짝수만 출력 (while)
