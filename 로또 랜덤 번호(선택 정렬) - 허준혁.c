@@ -13,28 +13,29 @@ void selection_sort(int num[], int n)
    int i, j, least, temp;
    for (i = 0; i < n - 1; i++) {
       least = i;
-      for (j = i + 1; j < n; j++)
-         if (num[j] < num[least]) least = j;
+      for (j = i + 1; j < n; j++) {
+         if (num[j] < num[least]) least = j; 
+      }
       SWAP(num[i], num[least], temp);
    }
 }
 
-int main(void)
+void main()
 {
    int i, j;
    n = MAX_SIZE;
+   srand(time(NULL));
 
    for (i = 0; i < n; i++) {
-       srand(time(NULL));
-      num[i] = (rand() % 45) + 1;
-      for (j = 0; j < i; j++) {
-          if (num[i] == num[j]) i--;
-      } 
+        num[i] = (rand() % 45) + 1;
+        for (j = 0; j < i; j++) {
+            if (num[i] == num[j]) {
+              i--;  
+            } 
+        } 
    }
-   
    selection_sort(num, n);
-   for (i = 0; i < n; i++)
-      printf("%d ", num[i]);
-       
-   return 0;
+   for (i = 0; i < n; i++) {
+        printf("%d ", num[i]);   
+   } 
 }
