@@ -9,4 +9,3 @@ void main()
         printf("\n");
     }
 }
-역순 별찍기
