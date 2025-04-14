@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 void main()
@@ -13,4 +12,3 @@ void main()
        printf("%d ", i);
    }
 }
-1부터 n까지 출력 (while)
