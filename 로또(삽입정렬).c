@@ -14,33 +14,32 @@ int n;
 void insertion_sort(int num[], int n) {
     int i, j, temp;
     
-    for(i = 1; i < n; i++) {
+    for (i = 1; i < n; i++) {
         temp = num[i];
-        for(j = i - 1; j >= 0 && num[j] > temp; j--) {
+        for (j = i - 1; j >= 0 && num[j] > temp; j--) {
             num[j + 1] = num[j];
         }
         num[j + 1] = temp;
     }
 }
 
-int main(void)
+void main()
 {
     int i, j;
     n = MAX_SIZE;
     srand(time(NULL));
     
-    for(i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         num[i] = (rand() % 45) + 1;
-        for(j = 0; j < i; j++) {
-            if(num[i] == num[j]) {
+        for (j = 0; j < i; j++) {
+            if (num[i] == num[j]) {
                 i--;
             }
         }
     }
     
     insertion_sort(num, n);
-    for(i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         printf("%d ", num[i]);
     }
-    return 0;
 }
