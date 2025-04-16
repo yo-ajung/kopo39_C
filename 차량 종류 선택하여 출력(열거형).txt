@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main() {
+    enum car { SEDAN = 1, SUV = 2, TRUCK = 3, VAN = 4 };
+    enum car c;
+
+    printf("번호를 입력하세요: ");
+    scanf("%d", &c); 
+
+    if (c == SEDAN) {
+        printf("이 차는 세단입니다.\n"); 
+    } else if (c == SUV) {
+        printf("이 차는 SUV입니다.\n");
+    } else if (c == TRUCK) {
+        printf("이 차는 트럭입니다.\n");
+    } else if (c == VAN) {
+        printf("이 차는 밴입니다.\n");
+    } else {
+        printf("잘못된 선택입니다.\n");
+    }
+}
