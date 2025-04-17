@@ -53,18 +53,15 @@ void printCalendar(int y, enum month m) {
     printf("\n");
 }
 
-int main() {
+void main() {
     int y, m;
     printf("연도 입력: ");
     scanf("%d", &y);
     printf("월 입력: ");
     scanf("%d", &m);
     printCalendar(y, (enum month)m);
-    
     int targetYear, targetMonth, targetDay;
     printf("D-day 날짜 입력 (연(enter), 월(enter), 일(enter)): ");
     scanf("%d %d %d", &targetYear, &targetMonth, &targetDay);
     printDday(targetYear, targetMonth, targetDay);
-
-    return 0;
 }
